@@ -120,7 +120,8 @@ html, body {
     gap: 20px; /* Adds space between the items */
     flex-wrap: wrap; /* Ensures responsiveness on smaller screens */
     width: 90%;
-    margin: auto;
+    margin: 50px auto;
+    padding: 20px 0;
 }
 
 .recommended-item {
