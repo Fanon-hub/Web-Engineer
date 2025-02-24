@@ -1,0 +1,318 @@
+@charset "utf-8";
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Serif JP', serif;
+}
+
+/* Navbar */
+.header_nav {
+  background: linear-gradient(90deg, #fff 20%, rgba(0,0,0,.6) 60%);
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.global_nav {
+  display: flex;
+  align-items: stretch;
+}
+
+.global_nav_item {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.global_nav_item:hover {
+  background: #fff;
+  color: #42210b;
+}
+
+.logo {
+  width: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 100%;
+}
+
+/* Header (Key Visual) */
+.key {
+  height: 500px;
+  background: center / cover no-repeat url("../images/sample_key.jpg");
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  padding-left: 10%;
+  color: black;
+}
+
+/* Concept Section */
+.section_title {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.concept_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10%;
+}
+
+.concept_text {
+  width: 60%;
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.concept_image {
+  width: 35%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.concept_image img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Menu Section */
+.menu {
+  background: url("../images/sample_menu_bg.jpg") center / cover no-repeat;
+  background-attachment: fixed;
+  padding: 50px 10%;
+  color: rgb(65, 31, 3);
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+.menu_title {
+  display: inline-block;
+  font-size: 1.8rem;
+  color: #3f1a02;
+  border-bottom: solid #42210b 2px;
+  margin-bottom: 20px;
+}
+.recommended_menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 55%;
+    margin: 0 auto;
+}
+
+.recommended_menu li {
+    display: flex;
+    align-items: center;
+    width: 49%; /* Keeps spacing between items */
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Adds space between items */
+}
+
+.recommended_menu img {
+    width: 120px; /* Adjust as needed */
+    height: auto;
+    border-radius: 10px; /* Slight rounding for softer look */
+    margin-right: 15px; /* Spacing between image and text */
+}
+
+.recommended_menu .text {
+    flex: 1; /* Ensures text takes up remaining space */
+}
+
+.recommended_menu h2 {
+    font-size: 1.4rem;
+    margin: 0 0 5px;
+    color: #42210b;
+}
+
+.recommended_menu p {
+    font-size: 1rem;
+    color: #666;
+}
+/* === Coffee Menu Styles === */
+.coffee_menu {
+  background: rgba(236, 241, 236, 0.8);
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.coffee_menu .center {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Coffee Menu Title */
+.coffee_menu .menu_title {
+  font-size: 1.8rem;
+  color: #42210b;
+  border-bottom: 2px solid #42210b;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Coffee List */
+.coffee_menu ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  justify-items: center;
+}
+
+/* Coffee Items */
+.coffee_menu li {
+  background: white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Coffee Item Images */
+.coffee_menu_image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Coffee Item Text */
+.coffee_menu li h2 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.coffee_menu li p {
+  font-size: 1rem;
+  color: #666;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .coffee_menu ul {
+    grid-template-columns: 1fr;
+  }
+
+  .coffee_menu li {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.access {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 10%;
+}
+
+.access dl {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.access dt {
+    font-weight: bold;
+    width: 20%; /* Adjust width for labels */
+    text-align: left;
+}
+
+.access dd {
+    width: 80%; /* Adjust width for content */
+    text-align: left;
+}
+
+.google_map {
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+}
+
+.footer {
+    background-color: #251e19; /* Background color */
+    color: white; /* Text color */
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between items */
+}
+
+.footer_nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer_nav ul li {
+    margin: 0 15px; /* Space between menu items */
+}
+
+.footer_nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Style the bullet points between menu items */
+.footer_nav ul li::after {
+    content: " • ";
+    color: white;
+}
+
+.footer_nav ul li:last-child::after {
+    content: ""; /* Remove bullet from the last item */
+}
+
+/* Logo Styling */
+.footer_logo {
+    height: 30px; /* Adjust size */
+}
+
+/* Center Copyright */
+.copyright {
+    margin-top: 10px;
+    font-size: 12px;
+}
